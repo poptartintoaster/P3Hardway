@@ -9,10 +9,10 @@ print("IF you do want that, hit RETURN.")
 input("?")
 
 print("Opening the file...")
-target = open(filename, 'w')
+target = open(filename,'w')
 
 print("Truncating the file.   Goodbye!")
-target.truncate()
+target.open(filename,'w')
 
 print("Now I'm going to ask you for three lines.")
 line1 = input("line 1: ")
