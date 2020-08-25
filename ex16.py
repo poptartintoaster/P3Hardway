@@ -3,19 +3,16 @@ from sys import argv
 script, filename = argv
 
 print(f"We're going to erase {filename}.")
-print("If you dont want that, hit CTRL-C (^C).")
+print("If you dont want that, hit CTRL-C  (^C).")
 print("IF you do want that, hit RETURN.")
 
 input("?")
 
-print("Opening the file ...")
+print("Opening the file...")
 target = open(filename, 'w')
 
-print("Truncating the file...")
-target.Truncate()
-
 print("Truncating the file.   Goodbye!")
-target.Truncate()
+target.truncate()
 
 print("Now I'm going to ask you for three lines.")
 line1 = input("line 1: ")
